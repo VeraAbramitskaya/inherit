@@ -14,7 +14,6 @@ public class Meeting extends Task {
         return (topic + project + start);
     }
 
-
     @Override
     public boolean matches(String query) {
         if (topic.contains(query)) {
@@ -25,4 +24,6 @@ public class Meeting extends Task {
         }
         return false;
     }
+
+
 }

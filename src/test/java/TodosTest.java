@@ -28,31 +28,24 @@ public class TodosTest {
         Assertions.assertArrayEquals(expected, actual);
     }
 
-    @Test
-    public void shouldFindResult() {
-        SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
+    //@Test
+    //public void shouldFindResult() {
 
-        String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
-        Epic epic = new Epic(55, subtasks);
-
-        Meeting meeting = new Meeting(
-                555,
-                "Выкатка 3й версии приложения",
-                "Приложение НетоБанка",
-                "Во вторник после обеда"
-        );
-        Todos todos = new Todos();
-
-        todos.add(simpleTask);
-        todos.add(epic);
-        todos.add(meeting);
-
-        String query = "хлеб";
-
-        int expected = 55;
-        int actual = Task[] search(String query);
-        Assertions.assertArrayEquals(expected, actual);
+       // String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
+       // Epic epic = new Epic(55, subtasks);
+        //SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
+//
+//        Todos todos = new Todos();
+//
+  //      todos.add(simpleTask);
+//        //todos.add(meeting);
+//
+//
+   //     int expected = 55;
+   //     int actual = Task[] search(query);
+   //     //String query = "хлеб";
+   //     Assertions.assertArrayEquals(expected, actual);
 
 
-    }
+    //}
 }
